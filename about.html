@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="bn" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NSDA Level 3 - About Page</title>
+
+    <!-- Tailwind CSS & DaisyUI CDN Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-base-200">
+    <!--   nav bar-->
+
+    <div class="navbar bg-base-100 shadow-md sticky top-0 z-50 px-4 md:px-12">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl font-bold text-primary">MY PORTFOLIO</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 font-semibold">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a href="contact.html" class="btn btn-primary btn-sm md:btn-md"
+          >Contact Us</a
+        >
+      </div>
+    </div>
+
+    <!-- ===================================================
+         a. PAGE TITLE SECTION
+         =================================================== -->
+    <section
+      class="bg-gradient-to-r from-slate-950 via-indigo-900 to-pink-700 text-white py-16 text-center"
+    >
+      <div class="max-w-4xl mx-auto px-4">
+        <h1 class="text-4xl md:text-5xl font-bold mb-3">About Me</h1>
+        <p class="text-lg opacity-90">
+          Learn more about my journey, experience, skills, and professional
+          clients.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         b. PERSONAL BIOGRAPHY SECTION
+         =================================================== -->
+    <section id="bio" class="py-12 bg-base-100">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8 text-indigo-700">
+          Personal Biography
+        </h2>
+        <div class="flex flex-col md:flex-row gap-8 items-center">
+          <!-- Profile Image -->
+          <img
+            src="14885.png"
+            alt="Biography Image"
+            class="rounded-lg shadow-md w-full md:w-1/2 h-[600px] object-contain object-center bg-base-200"
+          />
+
+          <!-- Biography Details -->
+          <div class="space-y-4">
+            <h3 class="text-2xl font-bold text-pink-600">
+              Who I Am ? <br />S.M. SAJADUL HASAN
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              I am a 3rd year running student of Physiotherapy. I am also
+              learning web design and developing my skills in modern web
+              technologies.
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+              I am learning to create simple, responsive, and user-friendly
+              websites using HTML5, Tailwind CSS, and DaisyUI.
+            </p>
+            <div class="pt-2">
+              <span class="badge badge-primary font-semibold p-3 mr-2"
+                >Frontend Developer</span
+              >
+              <span class="badge badge-secondary font-semibold p-3"
+                >UI/UX Enthusiast</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         c. EXISTING CLIENT SECTION
+         =================================================== -->
+    <section id="clients" class="py-12 bg-base-200">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8 text-indigo-700">
+          Existing Clients
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+          <!-- Client 1 -->
+          <div
+            class="card bg-base-100 p-6 text-center shadow hover:shadow-lg transition"
+          >
+            <div class="text-2xl font-bold text-pink-600 mb-1">TechCorp</div>
+            <span class="text-xs text-gray-500">Software Solutions</span>
+          </div>
+          <!-- Client 2 -->
+          <div
+            class="card bg-base-100 p-6 text-center shadow hover:shadow-lg transition"
+          >
+            <div class="text-2xl font-bold text-pink-600 mb-1">DevStudio</div>
+            <span class="text-xs text-gray-500">Web Agency</span>
+          </div>
+          <!-- Client 3 -->
+          <div
+            class="card bg-base-100 p-6 text-center shadow hover:shadow-lg transition"
+          >
+            <div class="text-2xl font-bold text-pink-600 mb-1">
+              Alpha Global
+            </div>
+            <span class="text-xs text-gray-500">Business Consultancy</span>
+          </div>
+          <!-- Client 4 -->
+          <div
+            class="card bg-base-100 p-6 text-center shadow hover:shadow-lg transition"
+          >
+            <div class="text-2xl font-bold text-pink-600 mb-1">
+              Creative Hub
+            </div>
+            <span class="text-xs text-gray-500">Digital Marketing</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         d. SKILL INFORMATION SECTION
+         =================================================== -->
+    <section id="skills" class="py-12 bg-base-100">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8 text-indigo-700">
+          Skill Information
+        </h2>
+        <div class="space-y-6 max-w-3xl mx-auto">
+          <!-- Skill 1: HTML5 -->
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="font-bold text-gray-700">HTML5</span>
+              <span class="font-bold text-indigo-700">95%</span>
+            </div>
+            <progress
+              class="progress progress-primary w-full h-3"
+              value="95"
+              max="100"
+            ></progress>
+          </div>
+
+          <!-- Skill 2: CSS3 / Tailwind CSS -->
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="font-bold text-gray-700">CSS3 & Tailwind CSS</span>
+              <span class="font-bold text-indigo-700">90%</span>
+            </div>
+            <progress
+              class="progress progress-primary w-full h-3"
+              value="90"
+              max="100"
+            ></progress>
+          </div>
+
+          <!-- Skill 3: DaisyUI Framework -->
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="font-bold text-gray-700"
+                >DaisyUI Component Library</span
+              >
+              <span class="font-bold text-indigo-700">85%</span>
+            </div>
+            <progress
+              class="progress progress-primary w-full h-3"
+              value="85"
+              max="100"
+            ></progress>
+          </div>
+
+          <!-- Skill 4: Responsive Web Design -->
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="font-bold text-gray-700">Responsive Web Design</span>
+              <span class="font-bold text-indigo-700">92%</span>
+            </div>
+            <progress
+              class="progress progress-primary w-full h-3"
+              value="92"
+              max="100"
+            ></progress>
+          </div>
+
+          <!-- Skill 5: JavaScript Basics -->
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="font-bold text-gray-700">JavaScript Basics</span>
+              <span class="font-bold text-indigo-700">70%</span>
+            </div>
+            <progress
+              class="progress progress-primary w-full h-3"
+              value="70"
+              max="100"
+            ></progress>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER SECTION -->
+    <footer
+      class="bg-gradient-to-r from-slate-950 via-indigo-900 to-pink-700 text-white py-8"
+    >
+      <div class="max-w-5xl mx-auto px-4 text-center">
+        <h2 class="text-2xl font-bold text-white">S.M. SAJADUL HASAN</h2>
+        <p class="mt-2 text-sm opacity-80">
+          3rd Year Running Student, Physiotherapy
+        </p>
+        <p class="mt-1 text-sm opacity-70">
+          Simple • Responsive • User Friendly
+        </p>
+
+        <a
+          href="contact.html"
+          class="btn btn bg-indigo-700 hover:bg-indigo-800 text-white border-0 mt-5"
+        >
+          Send Message
+        </a>
+
+        <div class="border-t border-white/20 mt-7 pt-5 text-sm opacity-70">
+          © 2026 S.M. SAJADUL HASAN. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

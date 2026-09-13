@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="bn" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NSDA Level 3 - Service Page</title>
+
+    <!-- Tailwind CSS & DaisyUI CDN Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-base-200">
+    <!--   nav bar-->
+
+    <div class="navbar bg-base-100 shadow-md sticky top-0 z-50 px-4 md:px-12">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl font-bold text-primary">MY PORTFOLIO</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 font-semibold">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a href="contact.html" class="btn btn-primary btn-sm md:btn-md"
+          >Contact Us</a
+        >
+      </div>
+    </div>
+    <!-- ===================================================
+         a. PAGE TITLE SECTION
+         =================================================== -->
+    <section
+      class="bg-gradient-to-r from-slate-950 via-indigo-900 to-pink-700 text-white py-10 text-center"
+    >
+      <h1 class="text-3xl md:text-4xl font-bold">Our Services</h1>
+      <p class="text-sm md:text-base mt-2 opacity-90">
+        High Quality Web Development & Physiotherapy Services
+      </p>
+    </section>
+
+    <!-- ===================================================
+         b. ALL SERVICE GRID SECTION
+         =================================================== -->
+    <section class="py-12 bg-base-100">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2
+          class="text-2xl md:text-3xl font-bold text-center mb-8 text-indigo-700"
+        >
+          What We Offer
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Service 1 -->
+          <div
+            class="card bg-base-200 shadow-md hover:shadow-xl transition-shadow border border-base-300"
+          >
+            <div class="card-body items-center text-center">
+              <div
+                class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-indigo-700 mb-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <h3 class="card-title text-pink-600">Web Design</h3>
+              <p class="text-sm text-gray-600">
+                Clean, modern, and responsive website layouts built with HTML,
+                Tailwind CSS, and DaisyUI.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div
+            class="card bg-base-200 shadow-md hover:shadow-xl transition-shadow border border-base-300"
+          >
+            <div class="card-body items-center text-center">
+              <div
+                class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-indigo-700 mb-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <h3 class="card-title text-pink-600">Responsive UI/UX</h3>
+              <p class="text-sm text-gray-600">
+                Ensuring perfect display and smooth user experience across
+                mobile, tablet, and desktop screens.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div
+            class="card bg-base-200 shadow-md hover:shadow-xl transition-shadow border border-base-300"
+          >
+            <div class="card-body items-center text-center">
+              <div
+                class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-indigo-700 mb-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="card-title text-pink-600">Physiotherapy Care</h3>
+              <p class="text-sm text-gray-600">
+                Professional rehabilitation guidance and physical health
+                assessment for injury recovery.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         c. CLIENT SECTION
+         =================================================== -->
+    <section class="py-12 bg-base-200 text-center">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-bold mb-3 text-indigo-700">
+          Our Valued Clients
+        </h2>
+        <p class="text-gray-600 text-sm mb-8">
+          Trusted by institutions and organizations
+        </p>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
+          <div
+            class="bg-base-100 p-6 rounded-lg shadow font-bold text-gray-500 hover:text-indigo-700 transition-colors"
+          >
+            SAIC Institute
+          </div>
+          <div
+            class="bg-base-100 p-6 rounded-lg shadow font-bold text-gray-500 hover:text-indigo-700 transition-colors"
+          >
+            NSDA Bangladesh
+          </div>
+          <div
+            class="bg-base-100 p-6 rounded-lg shadow font-bold text-gray-500 hover:text-indigo-700 transition-colors"
+          >
+            Health Care Ltd
+          </div>
+          <div
+            class="bg-base-100 p-6 rounded-lg shadow font-bold text-gray-500 hover:text-indigo-700 transition-colors"
+          >
+            Tech Solutions
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         d. CREATE FAQ SECTION (5 Questions using DaisyUI Accordion)
+         =================================================== -->
+    <section class="py-12 bg-base-100">
+      <div class="max-w-3xl mx-auto px-4">
+        <h2
+          class="text-2xl md:text-3xl font-bold text-center mb-8 text-indigo-700"
+        >
+          Frequently Asked Questions
+        </h2>
+
+        <div class="space-y-3">
+          <!-- Question 1 -->
+          <div
+            class="collapse collapse-arrow bg-base-200 border border-base-300 rounded-box"
+          >
+            <input type="radio" name="faq-accordion" checked="checked" />
+            <div
+              class="collapse-title text-base md:text-lg font-semibold text-pink-600"
+            >
+              1. What technologies do you use for web design?
+            </div>
+            <div class="collapse-content text-sm text-gray-600">
+              <p>
+                We primarily use modern web tools including HTML5, Tailwind CSS,
+                DaisyUI, and JavaScript for building responsive websites.
+              </p>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div
+            class="collapse collapse-arrow bg-base-200 border border-base-300 rounded-box"
+          >
+            <input type="radio" name="faq-accordion" />
+            <div
+              class="collapse-title text-base md:text-lg font-semibold text-pink-600"
+            >
+              2. Is the website design fully mobile responsive?
+            </div>
+            <div class="collapse-content text-sm text-gray-600">
+              <p>
+                Yes, all web pages are designed using mobile-first practices to
+                ensure full compatibility on smartphones, tablets, and desktop
+                devices.
+              </p>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div
+            class="collapse collapse-arrow bg-base-200 border border-base-300 rounded-box"
+          >
+            <input type="radio" name="faq-accordion" />
+            <div
+              class="collapse-title text-base md:text-lg font-semibold text-pink-600"
+            >
+              3. What physiotherapy services are provided?
+            </div>
+            <div class="collapse-content text-sm text-gray-600">
+              <p>
+                We provide musculoskeletal assessment, posture correction
+                advice, and exercise therapy planning for rehabilitation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div
+            class="collapse collapse-arrow bg-base-200 border border-base-300 rounded-box"
+          >
+            <input type="radio" name="faq-accordion" />
+            <div
+              class="collapse-title text-base md:text-lg font-semibold text-pink-600"
+            >
+              4. How long does it take to complete a web project?
+            </div>
+            <div class="collapse-content text-sm text-gray-600">
+              <p>
+                Project timeline depends on requirements, but standard
+                multi-page static websites are usually completed within 3 to 7
+                days.
+              </p>
+            </div>
+          </div>
+
+          <!-- Question 5 -->
+          <div
+            class="collapse collapse-arrow bg-base-200 border border-base-300 rounded-box"
+          >
+            <input type="radio" name="faq-accordion" />
+            <div
+              class="collapse-title text-base md:text-lg font-semibold text-pink-600"
+            >
+              5. How can I contact you for services or consultation?
+            </div>
+            <div class="collapse-content text-sm text-gray-600">
+              <p>
+                You can use the Contact Us button in the navigation bar or reach
+                out directly through phone or email listed on the Contact page.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER SECTION -->
+    <footer
+      class="bg-gradient-to-r from-slate-950 via-indigo-900 to-pink-700 text-white py-8"
+    >
+      <div class="max-w-5xl mx-auto px-4 text-center">
+        <h2 class="text-2xl font-bold text-white">S.M. SAJADUL HASAN</h2>
+        <p class="mt-2 text-sm opacity-80">
+          3rd Year Running Student, Physiotherapy
+        </p>
+        <p class="mt-1 text-sm opacity-70">
+          Simple • Responsive • User Friendly
+        </p>
+
+        <a
+          href="contact.html"
+          class="btn btn bg-indigo-700 hover:bg-indigo-800 text-white border-0 mt-5"
+        >
+          Send Message
+        </a>
+
+        <div class="border-t border-white/20 mt-7 pt-5 text-sm opacity-70">
+          © 2026 S.M. SAJADUL HASAN. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

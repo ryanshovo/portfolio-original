@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="bn" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S.M. SAJADUL HASAN // PORTFOLIO</title>
+
+    <!-- Tailwind CSS & DaisyUI CDN Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-base-200">
+    <!--   nav bar-->
+
+    <div class="navbar bg-base-100 shadow-md sticky top-0 z-50 px-4 md:px-12">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl font-bold text-primary">MY PORTFOLIO</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 font-semibold">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a href="contact.html" class="btn btn-primary btn-sm md:btn-md"
+          >Contact Us</a
+        >
+      </div>
+    </div>
+
+    <!-- ===================================================
+         a. BANNER CAROUSEL SLIDER SECTION
+         =================================================== -->
+    <section class="carousel w-full h-80 md:h-[400px]">
+      <!-- Slide 1 -->
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="slide1.jpg" class="w-full object-cover" alt="Banner 1" />
+        <div
+          class="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-white text-center p-4"
+        >
+          <h1 class="text-3xl font-bold mb-2">Welcome to My Portfolio</h1>
+          <p>Professional Web Designer & Developer</p>
+        </div>
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide3" class="btn btn-circle btn-sm md:btn-md">❮</a>
+          <a href="#slide2" class="btn btn-circle btn-sm md:btn-md">❯</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="slide2.jpg" class="w-full object-cover" alt="Banner 2" />
+        <div
+          class="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-white text-center p-4"
+        >
+          <h1 class="text-3xl font-bold mb-2">Creative Design Solutions</h1>
+          <p>Building responsive and modern websites</p>
+        </div>
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide1" class="btn btn-circle btn-sm md:btn-md">❮</a>
+          <a href="#slide3" class="btn btn-circle btn-sm md:btn-md">❯</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="slide3.jpg" class="w-full object-cover" alt="Banner 3" />
+        <div
+          class="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-white text-center p-4"
+        >
+          <h1 class="text-3xl font-bold mb-2">NSDA Level 3 Certified</h1>
+          <p>Quality standard web design service</p>
+        </div>
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide2" class="btn btn-circle btn-sm md:btn-md">❮</a>
+          <a href="#slide1" class="btn btn-circle btn-sm md:btn-md">❯</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         b. ABOUT ME SECTION
+         =================================================== -->
+    <section id="about" class="py-12 bg-base-100">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8 text-primary">
+          About Me
+        </h2>
+        <div class="flex flex-col md:flex-row gap-8 items-center">
+          <img
+            src="14885.png"
+            alt="Profile"
+            class="rounded-lg shadow-md w-full md:w-1/2 h-[500px] object-contain object-center bg-base-200"
+          />
+          <div class="space-y-3">
+            <h3 class="text-2xl font-bold text-pink-600">
+              Hello! I am a Web Designer
+            </h3>
+            <p class="text-gray-600">
+              I specialize in creating clean, modern, and user-friendly web
+              interfaces. With standard HTML and Tailwind CSS, I build
+              lightweight web applications.
+            </p>
+            <p class="text-gray-600">
+              My goal is to provide high-quality web designs that meet all NSDA
+              Level 3 standard requirements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         c. CAREER MISSION & VISION SECTION
+         =================================================== -->
+    <section id="mission" class="py-12 bg-base-200">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8 text-indigo-700">
+          Career Mission & Vision
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Mission -->
+          <div
+            class="card bg-base-100 p-6 shadow-md border-l-4 border-indigo-700"
+          >
+            <h3 class="text-xl font-bold text-indigo-700 mb-2">Our Mission</h3>
+            <p class="text-gray-600">
+              To provide clean, efficient, and fully functional web development
+              solutions that enhance user accessibility.
+            </p>
+          </div>
+          <!-- Vision -->
+          <div
+            class="card bg-base-100 p-6 shadow-md border-l-4 border-pink-600"
+          >
+            <h3 class="text-xl font-bold text-pink-600 mb-2">Our Vision</h3>
+            <p class="text-gray-600">
+              To become a skilled web professional recognized for delivering
+              innovative and high-performance websites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         d. SERVICE LIST SECTION
+         =================================================== -->
+    <section id="services" class="py-12 bg-base-100">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8 text-indigo-700">
+          Our Services
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="card bg-base-200 p-6 text-center shadow">
+            <h3 class="font-bold text-lg text-indigo-700 mb-2">Web Design</h3>
+            <p class="text-sm text-gray-600">
+              Creating clean and interactive user interfaces.
+            </p>
+          </div>
+          <div class="card bg-base-200 p-6 text-center shadow">
+            <h3 class="font-bold text-lg text-indigo-700 mb-2">
+              Responsive Layout
+            </h3>
+            <p class="text-sm text-gray-600">
+              Ensuring site compatibility on mobile and desktop.
+            </p>
+          </div>
+          <div class="card bg-base-200 p-6 text-center shadow">
+            <h3 class="font-bold text-lg text-indigo-700 mb-2">Frontend Dev</h3>
+            <p class="text-sm text-gray-600">
+              Writing clean HTML, Tailwind, and DaisyUI code.
+            </p>
+          </div>
+          <div class="card bg-base-200 p-6 text-center shadow">
+            <h3 class="font-bold text-lg text-indigo-700 mb-2">Bug Fixing</h3>
+            <p class="text-sm text-gray-600">
+              Troubleshooting layout issues and code errors.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         e. CLIENT FEEDBACK SECTION
+         =================================================== -->
+    <section id="feedback" class="py-12 bg-base-200 text-gray-800">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8 text-indigo-700">
+          Client Feedback
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="card bg-base-100 p-6 shadow-md border-l-4 border-primary">
+            <p class="italic mb-3">
+              "Great work! The layout is fast, clean, and responsive."
+            </p>
+            <div class="font-bold text-secondary text-right">
+              - Rahman & Co.
+            </div>
+          </div>
+          <div class="card bg-base-100 p-6 shadow-md border-l-4 border-primary">
+            <p class="italic mb-3">
+              "Highly professional code structure. Highly recommended!"
+            </p>
+            <div class="font-bold text-secondary text-right">
+              - Tech Solutions
+            </div>
+          </div>
+          <div class="card bg-base-100 p-6 shadow-md border-l-4 border-primary">
+            <p class="italic mb-3">
+              "Delivered the project on time with high code quality."
+            </p>
+            <div class="font-bold text-secondary text-right">
+              - Creative Studio
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER SECTION -->
+    <footer
+      class="bg-gradient-to-r from-slate-950 via-indigo-900 to-pink-700 text-white py-8"
+    >
+      <div class="max-w-5xl mx-auto px-4 text-center">
+        <h2 class="text-2xl font-bold text-white">S.M. SAJADUL HASAN</h2>
+        <p class="mt-2 text-sm opacity-80">
+          3rd Year Running Student, Physiotherapy
+        </p>
+        <p class="mt-1 text-sm opacity-70">
+          Simple • Responsive • User Friendly
+        </p>
+
+        <a
+          href="contact.html"
+          class="btn btn bg-indigo-700 hover:bg-indigo-800 text-white border-0 mt-5"
+        >
+          Send Message
+        </a>
+
+        <div class="border-t border-white/20 mt-7 pt-5 text-sm opacity-70">
+          © 2026 S.M. SAJADUL HASAN. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

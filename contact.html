@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Page</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- daisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-base-200 text-base-content">
+    <!--   nav bar-->
+
+    <div class="navbar bg-base-100 shadow-md sticky top-0 z-50 px-4 md:px-12">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl font-bold text-primary">MY PORTFOLIO</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 font-semibold">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a href="contact.html" class="btn btn-primary btn-sm md:btn-md"
+          >Contact Us</a
+        >
+      </div>
+    </div>
+
+    <!-- =========================
+       Page Title Section
+  ========================== -->
+    <section class="bg-base-100 py-10 text-center shadow-sm">
+      <div class="container mx-auto px-4">
+        <h1 class="text-3xl md:text-4xl font-bold">Contact Us</h1>
+
+        <p class="mt-2 text-base-content/70">Get in touch with us</p>
+      </div>
+    </section>
+
+    <!-- =========================
+       Direct Contact Information
+  ========================== -->
+    <section class="container mx-auto px-4 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Phone -->
+        <div class="card bg-base-100 shadow-md">
+          <div class="card-body text-center">
+            <h2 class="text-xl font-bold">Phone</h2>
+
+            <p>+880 1911-111111</p>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="card bg-base-100 shadow-md">
+          <div class="card-body text-center">
+            <h2 class="text-xl font-bold">Email</h2>
+
+            <p>example@gmail.com</p>
+          </div>
+        </div>
+
+        <!-- Address -->
+        <div class="card bg-base-100 shadow-md">
+          <div class="card-body text-center">
+            <h2 class="text-xl font-bold">Address</h2>
+
+            <p>Dhaka, Bangladesh</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+       Contact Form Section
+  ========================== -->
+    <section class="container mx-auto px-4 pb-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Contact Form -->
+        <div class="card bg-base-100 shadow-md">
+          <div class="card-body">
+            <h2 class="text-2xl font-bold mb-4">Send Us a Message</h2>
+
+            <form>
+              <!-- Name -->
+              <div class="form-control mb-4">
+                <label class="label">
+                  <span class="label-text"> Name </span>
+                </label>
+
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter your name"
+                  class="input input-bordered w-full"
+                  required
+                />
+              </div>
+
+              <!-- Email -->
+              <div class="form-control mb-4">
+                <label class="label">
+                  <span class="label-text"> Email </span>
+                </label>
+
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  class="input input-bordered w-full"
+                  required
+                />
+              </div>
+
+              <!-- Phone -->
+              <div class="form-control mb-4">
+                <label class="label">
+                  <span class="label-text"> Phone </span>
+                </label>
+
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  class="input input-bordered w-full"
+                  required
+                />
+              </div>
+
+              <!-- Address -->
+              <div class="form-control mb-4">
+                <label class="label">
+                  <span class="label-text"> Address </span>
+                </label>
+
+                <input
+                  type="text"
+                  name="address"
+                  placeholder="Enter your address"
+                  class="input input-bordered w-full"
+                  required
+                />
+              </div>
+
+              <!-- Message -->
+              <div class="form-control mb-4">
+                <label class="label">
+                  <span class="label-text"> Message </span>
+                </label>
+
+                <textarea
+                  name="message"
+                  placeholder="Write your message"
+                  class="textarea textarea-bordered h-32"
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary w-full">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- =========================
+           Google Map Section
+      ========================== -->
+        <div class="card bg-base-100 shadow-md">
+          <div class="card-body">
+            <h2 class="text-2xl font-bold mb-4">Our Location</h2>
+
+            <div class="w-full h-96">
+              <iframe
+                src="https://www.google.com/maps?q=Dhaka,Bangladesh&output=embed"
+                class="w-full h-full rounded-lg border-0"
+                loading="lazy"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer
+      class="bg-gradient-to-r from-slate-950 via-indigo-900 to-pink-700 text-white py-8"
+    >
+      <div class="max-w-5xl mx-auto px-4 text-center">
+        <h2 class="text-2xl font-bold text-white">S.M. SAJADUL HASAN</h2>
+        <p class="mt-2 text-sm opacity-80">
+          3rd Year Running Student, Physiotherapy
+        </p>
+        <p class="mt-1 text-sm opacity-70">
+          Simple • Responsive • User Friendly
+        </p>
+
+        <a
+          href="contact.html"
+          class="btn btn bg-indigo-700 hover:bg-indigo-800 text-white border-0 mt-5"
+        >
+          Send Message
+        </a>
+
+        <div class="border-t border-white/20 mt-7 pt-5 text-sm opacity-70">
+          © 2026 S.M. SAJADUL HASAN. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
